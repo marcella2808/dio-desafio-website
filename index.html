@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao HTML5</title>
+    <title>Introdução ao HTML</title>
 </head>
 <body>
-    <h1 id="h1">Introdução ao HTML5</h1>
+    <h1 id="h1">Introdução ao HTML</h1>
     <hr>
     <h2>Índice</h2>
     <ul>
-        <li><a href="#definicao">O que é HTML5?</a></li>
-        <li><a href="#estrutura">Estrutura básica do HTML5</a></li>
+        <li><a href="#definicao">O que é HTML?</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
         <li><a href="#tags">Tags</a></li>
         <li><a href="#textos">Textos</a></li>
         <li><a href="#imagens">Imagens</a></li>
         <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
         <li><a href="#links">Links</a></li>
     </ul>
-    <h2 id="definicao">O que é HTML5?</h2>
+    <h2 id="definicao">O que é HTML?</h2>
     <p>
-        O HTML5 (Hypertext Markup Language), diferentemente do que muitos iniciantes podem pensar, não é uma
+        O <abbr title="HyperText Markup Language">HTML</abbr>, diferentemente do que muitos iniciantes podem pensar, não é uma
         linguagem de programação e sim uma linguagem de marcação de hipertexto. Sua principal função é 
         fornecer uma estrutura para o website, ou seja, demarcar cada elemento da página sem se preocupar necessariamente
         com a estética (parte que será desenvolvida através do CSS).
     </p>
-    <h2 id="estrutura">Estrutura básica do HTML5</h2>
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
     <p>
-        A estrutura básica de um arquivo HTML5 deve conter, no mínimo, as seguintes tags: 
+        A estrutura básica de um arquivo HTML deve conter, no mínimo, as seguintes tags: 
     </p>
     <pre>
         <code>
@@ -69,7 +69,7 @@
     <p>
         Nesse exemplo, a tag <code>&lt;h1&gt;</code> transforma o texto em um título de tamanho h1 (maior tamanho) e é
         usado para determinar o assunto principal da página. Para visualizar como fica o resultado, role para cima ou clique 
-        <a href="#h1">aqui</a> e veja o título "Introdução ao HTML5".
+        <a href="#h1">aqui</a> e veja o título "Introdução ao HTML".
     </p>
     <h2 id="textos">Textos</h2>
     <p>
@@ -77,13 +77,25 @@
     </p>
     <ol>
         <li>
-            <h3><code>&lt;p&gt;&lt;/p&gt;</code></h3>
+            <h3><code>&lt;p&gt;</code></h3>
             <p>
                 Tag para criar parágrafos.
             </p>
         </li>
         <li>
-            <h3><code>&lt;strong&gt;&lt;/strong&gt;</code></h3>
+            <h3><code>&lt;h1&gt; até &lt;h6&gt;</code></h3>
+            <p>
+                Tags usadas para definir títulos e subtítulos:
+            </p>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+            <h6>h6</h6>
+        </li>
+        <li>
+            <h3><code>&lt;strong&gt;</code></h3>
             <p>
                 <strong>
                     Tag para aplicar negrito.
@@ -91,7 +103,7 @@
             </p>
         </li>
         <li>
-            <h3><code>&lt;u&gt;&lt;/u&gt;</code></h3>
+            <h3><code>&lt;u&gt;</code></h3>
             <p>
                 <u>
                     Tag para aplicar sublinhado.
@@ -99,7 +111,7 @@
             </p>
         </li>
         <li>
-            <h3><code>&lt;i&gt;&lt;/i&gt;</code></h3>
+            <h3><code>&lt;i&gt;</code></h3>
             <p>
                 <i>
                     Tag para aplicar itálico.
@@ -107,7 +119,7 @@
             </p>
         </li>
         <li>
-            <h3><code>&lt;mark&gt;&lt;/mark&gt;</code></h3>
+            <h3><code>&lt;mark&gt;</code></h3>
             <p>
                 <mark>
                     Tag para aplicar marca-texto.
@@ -115,13 +127,13 @@
             </p>
         </li>
         <li>
-            <h3><code>&lt;sup&gt;&lt;/sup&gt;, &lt;sub&gt;&lt;/sub&gt;</code></h3>
+            <h3><code>&lt;sup&gt;, &lt;sub&gt;</code></h3>
             <p>
                 Tags para aplicar <sup>sobrescrito</sup> e <sub>subscrito</sub>.
             </p>
         </li>
         <li>
-            <h3><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></h3>
+            <h3><code>&lt;blockquote&gt;</code></h3>
             <p>
                 <blockquote>
                     Tag para criar citações.
@@ -224,7 +236,6 @@
     <code>
             &lt;a href="https://github.com/marcella2808"&gt;Meu GitHub&lt;a&gt;
     </code>
-    <p><a href="https://github.com/marcella2808">Meu GitHub</a></p>
     <p>
         Para abrir o link em outra aba, podemos usar o atributo <code>target=""</code> com o valor <code>_blank</code>:
     </p>
