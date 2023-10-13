@@ -1,5 +1,5 @@
-# Desafio de site utilizando HTML
-Esse repositório tem como objetivo apresentar um site utilizando apenas a linguagem HTML com todos os conceitos aprendidos no curso de formação HTML Web Developer da [DIO](https://web.dio.me/track/formacao-html-web-developer).
+# Desafio de página web utilizando HTML
+Esse repositório tem como objetivo apresentar uma página web utilizando apenas a linguagem HTML com todos os conceitos aprendidos no curso de formação HTML Web Developer da [DIO](https://web.dio.me/track/formacao-html-web-developer).
 
 ## Ferramentas
 ![HTML5](https://img.shields.io/badge/HTML5-E5532D?style=for-the-badge&logo=html5&logoColor=white)
