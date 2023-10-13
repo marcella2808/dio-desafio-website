@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML5</title>
+</head>
+<body>
+    <h1 id="h1">Introdução ao HTML5</h1>
+    <hr>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#definicao">O que é HTML5?</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML5</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+    <h2 id="definicao">O que é HTML5?</h2>
+    <p>
+        O HTML5 (Hypertext Markup Language), diferentemente do que muitos iniciantes podem pensar, não é uma
+        linguagem de programação e sim uma linguagem de marcação de hipertexto. Sua principal função é 
+        fornecer uma estrutura para o website, ou seja, demarcar cada elemento da página sem se preocupar necessariamente
+        com a estética (parte que será desenvolvida através do CSS).
+    </p>
+    <h2 id="estrutura">Estrutura básica do HTML5</h2>
+    <p>
+        A estrutura básica de um arquivo HTML5 deve conter, no mínimo, as seguintes tags: 
+    </p>
+    <pre>
+        <code>
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;
+                    &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+        </pre>
+    <p>
+        <ol>
+            <li>
+                A tag <code>&lt;html&gt;</code> indica que tudo o que estiver dentro dela são elementos
+            que fazem parte da linguagem HTML.
+            </li>
+            <li>
+                Na tag <code>&lt;head&gt;</code> estão as informações do site e são ocultados para o usuário.
+            </li>
+            <li>
+                A <code>&lt;title&gt;</code> representa o título da página que fica na aba do navegador.
+            </li>
+            <li>
+                Por fim, a tag <code>&lt;body&gt;</code> engloba todo o corpo da página, ou seja, todo o conteúdo
+            visível pelo leitor.
+            </li>
+        </ol>
+    </p>
+    <h2 id="tags">Tags</h2>
+    <p>
+        As tags são essenciais para a construção de um arquivo HTML, pois são elas que informam para o navegador como
+        o texto dentro delas deve ser interpretado. Elas são formadas por uma palavra entre os sinais de "menor que" (&lt;) e
+        "maior que" (&gt;) e, para fechar a tag, é colocada uma barra (/) antes dessa mesma palavra. Exemplo: 
+        <code>&lt;h1&gt;</code><code>&lt;/h1&gt;</code>.
+    </p>
+    <p>
+        Nesse exemplo, a tag <code>&lt;h1&gt;</code> transforma o texto em um título de tamanho h1 (maior tamanho) e é
+        usado para determinar o assunto principal da página. Para visualizar como fica o resultado, role para cima ou clique 
+        <a href="#h1">aqui</a> e veja o título "Introdução ao HTML5".
+    </p>
+    <h2 id="textos">Textos</h2>
+    <p>
+        Para formatar textos, o HTML possui diversas tags. Aqui estão algumas delas e seus respectivos exemplos:
+    </p>
+    <ol>
+        <li>
+            <h3><code>&lt;p&gt;&lt;/p&gt;</code></h3>
+            <p>
+                Tag para criar parágrafos.
+            </p>
+        </li>
+        <li>
+            <h3><code>&lt;strong&gt;&lt;/strong&gt;</code></h3>
+            <p>
+                <strong>
+                    Tag para aplicar negrito.
+                </strong>
+            </p>
+        </li>
+        <li>
+            <h3><code>&lt;u&gt;&lt;/u&gt;</code></h3>
+            <p>
+                <u>
+                    Tag para aplicar sublinhado.
+                </u>
+            </p>
+        </li>
+        <li>
+            <h3><code>&lt;i&gt;&lt;/i&gt;</code></h3>
+            <p>
+                <i>
+                    Tag para aplicar itálico.
+                </i>
+            </p>
+        </li>
+        <li>
+            <h3><code>&lt;mark&gt;&lt;/mark&gt;</code></h3>
+            <p>
+                <mark>
+                    Tag para aplicar marca-texto.
+                </mark>
+            </p>
+        </li>
+        <li>
+            <h3><code>&lt;sup&gt;&lt;/sup&gt;, &lt;sub&gt;&lt;/sub&gt;</code></h3>
+            <p>
+                Tags para aplicar <sup>sobrescrito</sup> e <sub>subscrito</sub>.
+            </p>
+        </li>
+        <li>
+            <h3><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></h3>
+            <p>
+                <blockquote>
+                    Tag para criar citações.
+                </blockquote>
+            </p>
+        </li>
+    </ol>
+    <h2 id="imagens">Imagens</h2>
+    <p>
+        Para adicionar imagens à página, utiliza-se a tag <code>&lt;img&gt;</code> com o atributo <code>src=""</code>, onde será colocado
+        o nome do arquivo ou o seu link, caso pegue da internet.
+    </p>
+    <p>
+        Para inserir imagens salvas no próprio dispositivo, basta garantir que elas estejam no mesmo diretório (pasta) que o arquivo HTML
+        e escrever o nome junto com sua extensão:
+    </p>
+    <code>
+        &lt;img src="html-imagem.png"&gt;
+    </code>
+    <p>
+        Também é possível usar imagens direto da internet, apenas colocando sua url:
+    </p>
+    <code>
+        &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png"&gt;
+    </code>
+    <p>
+        Ambas as formas entregarão o mesmo resultado:
+    </p>
+    <img src="imagens/html-imagem.png" width="200">
+
+    <h2 id="listas">Listas ordenadas e não ordenadas</h2>
+    <h3>Listas ordenadas</h3>
+    <p>
+        Nas listas ordenadas, como o próprio nome já diz, os itens são colocados em ordem. São utilizadas as tags <code>&lt;ol&gt;</code>,
+        para criar a lista, e <code>&lt;li&gt;</code> para especificar cada item. Exemplo:
+    </p>
+    <pre>
+    <code>
+        &lt;ol&gt;
+            &lt;li&gt;
+                Primeiro item
+            &lt;/li&gt;
+            &lt;li&gt;
+                Segundo item
+            &lt;/li&gt;
+            &lt;li&gt;
+                Terceiro item
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    </code>
+    </pre>
+    <ol>
+        <li>
+            Primeiro item
+        </li>
+        <li>
+            Segundo item
+        </li>
+        <li>
+            Terceiro item
+        </li>
+    </ol>
+    <h3>Listas não ordenadas</h3>
+    <p>
+        As listas não ordenadas são organizadas em tópicos e seguem a mesma lógica de construção das listas ordenadas, porém utilizando
+        a tag <code>&lt;ul&gt;</code> ao invés de <code>&lt;ol&gt;</code>. Exemplo:
+    </p>
+    <pre>
+        <code>
+            &lt;ul&gt;
+                &lt;li&gt;
+                    Item
+                &lt;/li&gt;
+                &lt;li&gt;
+                    Item
+                &lt;/li&gt;
+                &lt;li&gt;
+                    Item
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+        </pre>
+
+    <ul>
+        <li>
+            Item
+        </li>
+        <li>
+            Item
+        </li>
+        <li>
+            Item
+        </li>
+    </ul>
+    <h2 id="links">Links</h2>
+    <p>
+        Os links nos permitem navegar pela internet e, para criá-los, é usada a tag <code>&lt;a&gt;</code>. No entanto, para especificar 
+        a página a qual o usuário será direcionado é necessário adicionar o atributo <code>href=""</code> e colocar a url entre as aspas:
+    </p>
+    <code>
+            &lt;a href="https://github.com/marcella2808"&gt;Meu GitHub&lt;a&gt;
+    </code>
+    <p><a href="https://github.com/marcella2808">Meu GitHub</a></p>
+    <p>
+        Para abrir o link em outra aba, podemos usar o atributo <code>target=""</code> com o valor <code>_blank</code>:
+    </p>
+    <code>
+        &lt;a href="https://github.com/marcella2808" target="_blank"&gt;Meu GitHub&lt;a&gt;
+    </code>
+    <p><a href="https://github.com/marcella2808" target="_blank">MeuGithub</a></p>
+    <hr>
+    <p>
+        Site feito por: Marcella Ferreira
+    </p>
+    <a href="https://github.com/marcella2808" target="_blank">
+    <img src="imagens/github-imagem.jpeg" width="40">
+    </a>
+    <a href="https://www.linkedin.com/in/marcella-carneiro/" target="_blank">
+    <img src="imagens/linkedin-imagem.png" width="40">
+    </a>
+</body>
+</html>
